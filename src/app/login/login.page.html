@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      <img src="assets//logo.png" alt="" id="im" > 
+    </ion-title>
+    <ion-title class="ion-text-rigth">
+        <ion-label style="background-color:powderblue;" >
+          <h1 class="ion-text-center" style="font-family:verdana;">Tellevoapp</h1>
+        </ion-label>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    
+    <ion-card-content>
+      <form [formGroup]="formularioLogin">
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input formControlName="nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input formControlName="password" type="password"></ion-input>
+        </ion-item>
+      </form>
+      <br>
+      <div>
+        <h6>¿Olvidó su contraseña ?</h6>
+        
+        <br>
+        <ion-button (click)="ingresar()">
+          Ingresar
+        </ion-button>
+        <br><br><br>
+
+        <h6>Si no tienes una cuenta </h6>
+        <ion-buttons  slot="end">
+          <ion-button color="primary"  size="small"  [routerLink]="['/registro']">Registrate</ion-button>
+        </ion-buttons>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  
+    
+ 
+</ion-footer>
+
+

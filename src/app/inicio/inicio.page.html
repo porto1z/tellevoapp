@@ -1,0 +1,85 @@
+
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    
+    <ion-item lines="none">
+      <ion-avatar slot="end">
+        <img src="assets/icon/profile.jpg">
+      </ion-avatar>
+      <!--El boton del muenu anbuerguesa-->
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-item>
+
+    <!--Texto-->
+    <ion-item lines="none">
+      <div class="ion-padding-start ion-padding-bottom">
+        <ion-label>
+          <h2>TellevoApp</h2>
+        </ion-label>
+  
+        <ion-row class="ion-align-items-center">
+          <ion-col size="10">
+            <ion-searchbar placeholder="Melipilla" searchIcon="location-outline"></ion-searchbar>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+
+    <ion-row class="ion-align-items-center ion-padding-horizontal">
+      <ion-col size="6">
+        <h5>8 Results</h5>
+      </ion-col>
+      <ion-col size="6" class="ion-text-right">
+        <ion-button fill="clear" color="dark">
+          <ion-icon slot="icon-only" name="ellipsis-horizontal"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="6">
+            <ion-badge color="warning" mode="ios">
+              <ion-icon name="star"></ion-icon>
+              4.5
+            </ion-badge>
+          </ion-col>
+          <ion-col size="6" class="ion-text-right">
+            <ion-card-subtitle color="success">Melipilla</ion-card-subtitle>
+          </ion-col>
+        </ion-row>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-img src="https://www.auto123.com/media/videos/specs/2011/dodge/en/Dodge-Avenger-2011.jpg"></ion-img>
+
+        <ion-row>
+          <ion-col size="8">
+            <ion-card-title></ion-card-title>
+            <ion-card-subtitle></ion-card-subtitle>
+          </ion-col>
+          <ion-col size="4" class="ion-text-right">
+            <ion-button fill="clear" color="dark" size="large" routerLink="/details">
+              <ion-icon slot="icon-only" name="chevron-forward-circle-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+</ion-content>
+
+<!--
+<ion-content>
+  <app-card-entrada [entrada]="entradaActual" (eventoGuardar)="guardar($event)"></app-card-entrada>
+</ion-content>
+-->
